@@ -1,9 +1,11 @@
 ---
 layout: default
+featured-image: gj.jpg
+featured-image-alt: sup
 ---
 
 <body>
-	<p><img src="/assets/images/gj.jpg" class="img-responsive" alt=""></p>
+	<p>{% if page.featured-image %}{% include post-featured-image.html image=page.featured-image alt=page.featured-image-alt %}{% endif %}</p>
 	<p                
         	Email: <a class="email" href="112003001@smail.iitpkd.ac.in">112003001@smail.iitpkd.ac.in</a>
         </p>
